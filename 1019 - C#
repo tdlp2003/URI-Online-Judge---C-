@@ -1,0 +1,21 @@
+using System;
+
+class MainClass {
+ static void Main (string[] args) 
+  {
+    
+    int tempo, h, m, s;
+
+    tempo = int.Parse(Console.ReadLine());
+
+    h = tempo / 3600;
+
+    tempo = tempo % 3600;
+
+    m = tempo / 60;
+
+    s = tempo % 60;
+
+    Console.WriteLine(h+":"+m+":"+s);
+  }
+}
