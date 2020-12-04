@@ -1,0 +1,19 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+    int fat, n, i;
+    n = int.Parse(Console.ReadLine());
+
+    if( n > 0 && n < 13)
+    {
+      fat = 1;
+      for(i = 1; i <= n; ++i)
+      {
+        fat = fat * i;
+      }
+      Console.WriteLine(fat);
+    }
+  }
+}
