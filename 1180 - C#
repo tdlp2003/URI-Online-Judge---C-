@@ -1,0 +1,37 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+    int v, n, i, c;
+    int pos = 0;
+    int menor = 0;
+
+    n = int.Parse(Console.ReadLine());
+    int[] x = new int[n];
+
+    string leitura = Console.ReadLine();
+
+    if( n < 1000 && n > 1)
+    {
+      for(i = 0; i < n; ++i)
+      {
+        x[i] = Convert.ToInt32(leitura.Split(' ')[i]);
+      }
+
+      menor = x[0];
+
+      for(c = 1; c < n; c++)
+      {
+        if(menor > x[c])
+        {
+          menor = x[c];
+          pos = c;
+        }
+      
+      }
+      } 
+    Console.WriteLine("Menor valor: "+menor);
+    Console.WriteLine("Posicao: "+pos);
+  }
+}
