@@ -1,0 +1,19 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+    double distancia, litros;
+    int  horas, velocidade;
+
+    horas = int.Parse(Console.ReadLine());
+    velocidade = int.Parse(Console.ReadLine());
+
+    distancia = velocidade * horas;
+
+    litros = distancia / 12;
+
+    Console.WriteLine("{0:0.000}", litros);
+
+  }
+}
