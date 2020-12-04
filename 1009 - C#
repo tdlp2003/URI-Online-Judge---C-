@@ -1,0 +1,21 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+
+   string nome;
+   double salario_fixo, montante_vendas, total;
+
+   nome = Console.ReadLine();
+
+   salario_fixo = double.Parse(Console.ReadLine());
+
+   montante_vendas = double.Parse(Console.ReadLine());
+
+   total = salario_fixo + (montante_vendas * 0.15);
+
+   Math.Round(total, 2);
+   
+   Console.WriteLine("TOTAL = R$ {0:0.00}", total );
+  }
+}
