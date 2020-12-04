@@ -1,0 +1,19 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+    double a, b, c, media;
+
+
+    a = Convert.ToDouble(Console.ReadLine());
+    b = Convert.ToDouble(Console.ReadLine());
+    c = Convert.ToDouble(Console.ReadLine());
+
+    media = (a * 0.2) + (b * 0.3) + (c * 0.5);
+
+    Math.Round( media, 1);
+    Console.WriteLine("MEDIA = {0:0.0}", media);
+
+  }
+}
