@@ -1,0 +1,16 @@
+using System;
+
+class main {
+ static void Main (String[] args) 
+  {
+    DateTime data;
+
+    data = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yy", null);
+
+    Console.WriteLine(data.ToString("MM/dd/yy"));
+
+    Console.WriteLine(data.ToString("yy/MM/dd"));  
+     
+    Console.WriteLine(data.ToString("dd-MM-yy"));
+  }
+}
