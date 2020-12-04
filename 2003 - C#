@@ -1,0 +1,29 @@
+using System;
+
+class main
+{
+  static void Main(String[] args)
+  {
+    DateTime f = DateTime.Parse("08:00");
+    DateTime bino;
+    string h, a;
+
+    h = Console.ReadLine();
+
+    do
+    {
+      bino = DateTime.Parse(h).AddMinutes(60);
+
+      if(f < bino)
+      {
+        a = (bino - f).TotalMinutes.ToString();
+      }
+      else
+        a = "0";
+
+      Console.WriteLine("Atraso maximo: "+a);
+
+      h = Console.ReadLine();
+    } while(h != null);
+  }
+}
