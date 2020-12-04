@@ -1,0 +1,25 @@
+using System;
+
+class Ex_1010 {
+  static void Main (string[] args) 
+  {
+    int cod_1, qtd_1, cod_2, qtd_2;
+    double valor_1, valor_2, prod1, prod2, total;
+    string leitura;
+
+    leitura = Console.ReadLine();
+    cod_1 = int.Parse(leitura.Split(' ')[0]);
+    qtd_1 = int.Parse(leitura.Split(' ')[1]);
+    valor_1 = double.Parse(leitura.Split(' ')[2]);
+
+    leitura = Console.ReadLine();                
+    cod_2 = int.Parse(leitura.Split(' ')[0]);
+    qtd_2 = int.Parse(leitura.Split(' ')[1]);
+    valor_2 = double.Parse(leitura.Split(' ')[2]);
+    
+    total = (valor_1 * qtd_1) + (valor_2 * qtd_2);
+
+    Console.WriteLine("VALOR A PAGAR: R$ {0:0.00}", total);
+
+  }
+}
