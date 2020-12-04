@@ -1,0 +1,15 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) 
+  {
+    int minutos, km;
+
+    km = Convert.ToInt32(Console.ReadLine());
+
+    minutos = km * 2;
+
+    Console.WriteLine(minutos+" minutos");
+
+  }
+}
